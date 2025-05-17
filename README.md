@@ -21,7 +21,7 @@ A powerful and flexible Python tool for testing login functionality through auto
 1. Clone this repository:
    ```bash
    git clone https://github.com/yourusername/login-tester.git
-   cd login-tester
+   cd web-login-brute-force
    ```
 
 2. Install required dependencies:
@@ -34,7 +34,7 @@ A powerful and flexible Python tool for testing login functionality through auto
 Basic usage example:
 
 ```bash
-python login_tester.py --url "https://example.com/login" --usernames admin user --passwords pass1234 pass5678
+python login-brute.py --url "https://example.com/login" --usernames admin user --passwords pass1234 pass5678
 ```
 
 ### Command-line Arguments
@@ -60,22 +60,22 @@ python login_tester.py --url "https://example.com/login" --usernames admin user 
 
 ### Testing with credential files:
 ```bash
-python login_tester.py --url "https://example.com/login" --username-file usernames.txt --password-file passwords.txt --output results.json
+python login-brute.py --url "https://example.com/login" --username-file usernames.txt --password-file passwords.txt --output results.json
 ```
 
 ### Testing with custom form field names:
 ```bash
-python login_tester.py --url "https://example.com/login" --usernames admin --passwords test123 --username-field "user_id" --password-field "user_pass"
+python login-brute.py --url "https://example.com/login" --usernames admin --passwords test123 --username-field "user_id" --password-field "user_pass"
 ```
 
 ### Fast parallel testing:
 ```bash
-python login_tester.py --url "https://example.com/login" --username-file users.txt --password-file passwords.txt --parallel --max-workers 10 --delay 0.2
+python login-brute.py --url "https://example.com/login" --username-file users.txt --password-file passwords.txt --parallel --max-workers 10 --delay 0.2
 ```
 
 ### Custom success/failure detection:
 ```bash
-python login_tester.py --url "https://example.com/login" --usernames admin --passwords password123 --success-indicator "Welcome back" --failure-indicator "Invalid credentials"
+python login-brute.py --url "https://example.com/login" --usernames admin --passwords password123 --success-indicator "Welcome back" --failure-indicator "Invalid credentials"
 ```
 
 ## 📊 Sample Output
