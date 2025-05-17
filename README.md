@@ -20,7 +20,7 @@ A powerful and flexible Python tool for testing login functionality through auto
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/yourusername/login-tester.git
+   git clone https://github.com/amr-0xZ/web-login-brute-force.git
    cd web-login-brute-force
    ```
 
